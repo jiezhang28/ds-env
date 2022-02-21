@@ -12,5 +12,39 @@ It is important to understand that Docker only works natively with Linux OS, whi
 |-----------|----------------|---------------------------
 | Linux VM | Paid Component | Hyperkit
 | VM manager | Paid Component | Minikube
-| docker cli | open source | n/a
-| docker-compose cli | open source | n/a
+| containerd | open source | Minikube
+| docker cli | open source | docker 
+| docker-compose cli | open source | docker-compose 
+
+## Uninstalling Docker Desktop
+
+The easist way to completely uninstall Docker Desktop is to use the uninstall feature that comes with the applications.
+
+## Installation and Setup
+
+### Prerequisites
+
+1. Homebrew is installed
+2. Mac is still on the Intel chipset and NOT an M1
+
+If have an M1, the options will be limited to using podman as a complete replacement for docker desktop. Podmac CLI tool works exactly like docker CLI, however it currently does not have a docker-compose equivilent.
+
+### Installing all components
+
+```
+# Install hyperkit
+brew install hyperkit
+
+# Install minikube
+brew install minikube
+
+# Install Docker CLI
+brew install docker
+
+# Install Docker-compose
+brew install docker-compose
+```
+
+### Setup
+
+
